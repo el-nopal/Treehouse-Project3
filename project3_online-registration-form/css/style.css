@@ -1,0 +1,209 @@
+/* ===================
+  Base Element Styles
+====================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+legend {
+  color: #2d3945;
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p,
+label {
+  color: #55687a;
+}
+
+p {
+  font-size: .9em;
+}
+
+header {
+  text-align: center;
+}
+
+fieldset,
+input,
+textarea,
+button {
+  border: none;
+}
+
+button {
+  background-color: #4ebbb5;
+  color: white;
+  padding: 15px 110px 15px 110px;
+  border-radius: 5px;
+
+}
+
+/* ===================
+  Base Layout Styles
+====================== */
+
+.title {
+  background-color: #2d3945;
+  color: white;
+  width: 100%;
+  padding: 35px 0 35px 0;
+  margin: 0;
+}
+
+.head {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.input,
+.small {
+  text-align: left;
+  background-color:  #eff0f1;
+  color: black;
+  padding: 15px 20px 15px 20px;
+  margin: 8px 0 8px 0;
+  border-radius: 5px;
+}
+
+.input::placeholder {
+  color: #a8adb2;
+  font-style: italic;
+  font-size: .9em;
+  text-align: right;
+}
+
+.input:focus,
+.small:focus {
+  border: 3px solid #46698b;
+}
+
+
+.zip-row .small {
+  max-width: 150px;
+}
+
+.news {
+  line-height: 25px;
+}
+
+/* ---hr--- */
+.top {
+  border-top: 2px solid #2d3945;
+  border-bottom: 6px double #2d3945;
+  margin: 5%;
+}
+
+.bottom {
+  border-top: 2px solid #2d3945;
+  margin: 5%;
+}
+
+.button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.copy {
+  font-size: .9em;
+  text-align: center;
+}
+
+/* ---------------------
+      flex box layout
+--------------------- */
+
+.input-row {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.foot {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================
+  Media Queries
+====================== */
+
+
+@media (min-width: 768px) {
+
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .top,
+  .bottom {
+    max-width: 600px;
+    margin: 25px 0 25px 0;
+  }
+
+  .head,
+  .container {
+    max-width: 600px;
+    margin: 0 25% 0 25%;
+  }
+
+  .button {
+    margin: 20px 0 20px 0;
+  }
+
+/* ---------------------
+      flex box layout
+--------------------- */
+
+  .input-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input-row .label {
+    flex-grow: 1;
+  }
+
+  .input-row .input {
+    flex-basis: 350px;
+  }
+
+  .zip-row {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .zip-row .label {
+
+  }
+
+  .zip-row .small {
+    margin-left: 83px;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    max-width: 600px;
+  }
+
+
+}

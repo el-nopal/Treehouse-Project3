@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body class="main">
+    <header class="header">
+      <h2 class="title" >THE CODE REVIEW</h2>
+      <div class="head">
+        <h3>Signup for our newsletter</h3>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <hr class="top">
+      </div>
+    </header>
+
+    <form class="container" action="index.html" method="post">
+      <fieldset class="contact">
+
+        <legend>Contact Information</legend>
+
+        <div class="input-row">
+          <label class="label" for="name">Full Name</label><br class="out">
+          <input class="item input" id="name" type="text" name="name" placeholder="required"><br>
+        </div>
+
+        <div class="input-row">
+          <label class="label" for="email">Email Address</label><br class="out">
+          <input class="item input" id="email" type="email" name="email" placeholder="required"><br>
+        </div>
+
+        <div class="input-row">
+          <label class="label" for="phone">Phone Number</label><br class="out">
+          <input class="item input" id="phone" type="tel" name="phone"><br>
+        </div>
+
+        <div class="input-row">
+          <label class="label" for="address">Street Address</label><br class="out">
+          <input class="item input" id="address" type="text" name="address" ><br>
+        </div>
+
+        <div class="input-row">
+          <label class="label" for="city">City</label><br class="out">
+          <input class="item input" id="city" type="text" name="city"><br>
+        </div>
+
+        <div class="input-row">
+          <label class="label" for="state">State</label><br class="out">
+          <select class="input" id="state" name="state">
+            <option value="choose-state">choose state</option>
+            <option value="california">california</option>
+            <option value="oregon">oregon</option>
+            <option value="washington">washington</option>
+            <option value="arizona">arizona</option>
+            <option value="new mexico">new mexico</option>
+            <option value="texas">texas</option>
+          </select><br>
+        </div>
+
+        <div class="zip-row">
+          <label class="label" for="zip">Zip Code</label><br class="out">
+          <input class="small" type="text" id="zip" name="zip" pattern="[0-9]{5}"><br>
+        </div>
+
+      </fieldset>
+
+    <hr class="bottom">
+
+      <fieldset class="news">
+        <legend>Newsletter</legend>
+        <p>Select the newsletter you would like to recieve</p>
+
+        <input type="checkbox" id="html-news" name="html-news" value="newsletter">
+        <label for="html-news">HTML News</label><br>
+
+        <input type="checkbox" id="css" name="css" value="newsletter">
+        <label for="css">CSS News</label><br>
+
+        <input type="checkbox" id="javascript" name="javascript" value="newsletter">
+        <label for="javascript">Javascript News</label><br>
+
+        <p>Newsletter format</p>
+        <input type="radio" id="html" name="format" value="news_format">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="plain" name="format" value="news_format">
+        <label for="plain">Plain text</label><br>
+
+      </fieldset>
+
+      <fieldset class="foot">
+        <label for="topic">Other topics you'd like to hear about</label>
+        <textarea class="input type" id="topic" name="topic" rows="5" cols="21"></textarea><br>
+        <button class="button" name="submit" type="submit" value="submit-true">Sign Up</button>
+      </fieldset>
+      <p class="copy">&copy; The Code Review</p>
+    </form>
+  </body>
+</html>
