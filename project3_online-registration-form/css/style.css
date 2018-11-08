@@ -37,12 +37,18 @@ button {
   border: none;
 }
 
+textarea {
+  width: 290px;
+}
+
 button {
   background-color: #4ebbb5;
   color: white;
   padding: 15px 110px 15px 110px;
   border-radius: 5px;
-
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 290px;
 }
 
 /* ===================
@@ -105,11 +111,6 @@ button {
   margin: 5%;
 }
 
-.button {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 .copy {
   font-size: .9em;
   text-align: center;
@@ -128,7 +129,6 @@ button {
 .foot {
   display: flex;
   flex-direction: column;
-  width: 100%
 }
 
 /* ===================
@@ -150,13 +150,13 @@ button {
   .top,
   .bottom {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 25px 0 25px 0;
   }
 
   .head,
   .container {
     max-width: 600px;
-    margin: 0 25% 0 25%;
+    margin: 0 auto;
   }
 
   .button {
@@ -196,7 +196,6 @@ button {
   .zip-row .small {
     margin-right: 35%
   }
-
 
   .foot {
     display: flex;
