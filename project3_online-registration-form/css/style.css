@@ -183,20 +183,20 @@ button {
   }
 
   .zip-row {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-
     justify-content: space-between;
   }
 
   .zip-row .label {
-
+    flex-grow: 1;
   }
 
   .zip-row .small {
-    margin-left: 83px;
+    margin-right: 35%
   }
+
 
   .foot {
     display: flex;
