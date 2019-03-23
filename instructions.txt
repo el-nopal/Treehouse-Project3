@@ -1,4 +1,4 @@
-Instructions:
+Project Instructions:
 For this project we will be checking the design in Google Chrome version 48 or higher. Different browsers display forms slightly differently so please make sure it looks correct in Google Chrome before submitting.
 Build the layout using a mobile first design:
 
